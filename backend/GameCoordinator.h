@@ -6,6 +6,7 @@
 #include "frontend/MainFrame.h"
 #include "frontend/TitleWidget.h"
 #include "backend/ResourceProvider.h"
+#include "frontend/OfficeWidget.h"
 
 class GameCoordinator : public QObject
 {

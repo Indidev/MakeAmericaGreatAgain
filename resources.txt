@@ -1,1 +1,2 @@
 titlescreen: img/title-screen.jpg
+office: img/office.jpg

@@ -16,5 +16,7 @@ GameCoordinator::GameCoordinator(QObject *parent) :
 
 void GameCoordinator::startGame()
 {
+    MainFrame::setContent(new OfficeWidget);
+    MainFrame::setBg(ResourceProvider::img("office"));
     //todo write game stuff
 }

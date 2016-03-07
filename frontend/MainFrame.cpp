@@ -23,11 +23,7 @@ void MainFrame::init() {
     resolution = QApplication::desktop()->screenGeometry().size();
 
     layeredWidget = new LayeredWidget();
-    if (!ui->centralWidget->layout())
-        ui->centralWidget->setLayout(new QGridLayout);
     ui->centralWidget->layout()->addWidget(layeredWidget);
-    ui->centralWidget->layout()->setMargin(0);
-    ui->centralWidget->layout()->setSpacing(0);
 
     bgLayer = layeredWidget->addWidget(0);
 

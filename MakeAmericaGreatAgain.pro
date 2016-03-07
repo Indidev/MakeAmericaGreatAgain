@@ -20,17 +20,20 @@ SOURCES +=\
     backend/ResourceProvider.cpp \
     backend/Input.cpp \
     backend/GameCoordinator.cpp \
-    frontend/TitleWidget.cpp
+    frontend/TitleWidget.cpp \
+    frontend/OfficeWidget.cpp
 
 HEADERS  += frontend/MainFrame.h \
     frontend/LayeredWidget.h \
     backend/ResourceProvider.h \
     backend/Input.h \
     backend/GameCoordinator.h \
-    frontend/TitleWidget.h
+    frontend/TitleWidget.h \
+    frontend/OfficeWidget.h
 
 FORMS    += frontend/MainFrame.ui \
-    frontend/TitleWidget.ui
+    frontend/TitleWidget.ui \
+    frontend/OfficeWidget.ui
 
 
 # Define copy command for linux and windows
