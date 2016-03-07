@@ -1,2 +1,7 @@
 titlescreen: img/title-screen.jpg
 office: img/office.jpg
+press: img/trump_press.png
+default: img/trump_sitting.png
+twitter: img/trump_twitter.png
+phone: img/trump_phone.png
+exit: img/exit.png

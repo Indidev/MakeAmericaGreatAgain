@@ -27,6 +27,8 @@ public:
 
     static void setContent(QWidget *widget);
     static void setBg(QImage* img);
+    static void setTrump(QImage* trump);
+    static void removeTrump();
 
 protected:
     static MainFrame* self;
@@ -34,7 +36,9 @@ protected:
     LayeredWidget *layeredWidget;
     QWidget *bgLayer;
     QWidget *contentLayer;
+    QWidget *trumpLayer;
     QWidget *curContent;
+    QWidget *curTrump;
     QLabel *bgLabel;
     QSize resolution;
 

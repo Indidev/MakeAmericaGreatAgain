@@ -17,9 +17,13 @@ MainFrame::~MainFrame()
 
 void MainFrame::init() {
     curContent = NULL;
+    curTrump = NULL;
     self = this;
 
     ui->setupUi(this);
+
+    this->setWindowFlags(Qt::FramelessWindowHint);
+    this->showFullScreen();
     resolution = QApplication::desktop()->screenGeometry().size();
 
     layeredWidget = new LayeredWidget();
@@ -41,13 +45,19 @@ void MainFrame::init() {
     contentLayer->layout()->setMargin(0);
     contentLayer->layout()->setSpacing(0);
 
+    trumpLayer = layeredWidget->addWidget(2);
+    trumpLayer->setLayout(new QGridLayout);
+    trumpLayer->layout()->setMargin(0);
+    trumpLayer->layout()->setSpacing(0);
+
     //connect(InputGrabber::instance(), SIGNAL(inputPress(InputEvent)), this, SLOT(onKey(InputEvent)));
 
     bgLayer->setAttribute(Qt::WA_TransparentForMouseEvents);
+    trumpLayer->setAttribute(Qt::WA_TransparentForMouseEvents);
     //ui->centralWidget->setMinimumSize(resolution);
     //ui->centralWidget->setMaximumSize(resolution);
 
-    this->showFullScreen();
+    ui->centralWidget->showFullScreen();
 }
 
 void MainFrame::setBg(QImage *img)
@@ -56,6 +66,27 @@ void MainFrame::setBg(QImage *img)
         return;
 
     self->bgLabel->setPixmap(QPixmap::fromImage(img->scaled(self->resolution)));
+}
+
+void MainFrame::setTrump(QImage *trump)
+{
+    if (!trump || !self)
+        return;
+    QLabel *lbl = new QLabel();
+    lbl->setPixmap(QPixmap::fromImage(trump->scaled(self->resolution)));
+
+    QWidget *w = new QWidget;
+    w->setLayout(new QGridLayout);
+    w->layout()->setSpacing(0);
+    w->layout()->setMargin(0);
+
+    w->layout()->addWidget(lbl);
+
+    self->setWidget(self->trumpLayer, &(self->curTrump), w, true);
+}
+
+void MainFrame::removeTrump(){
+    self->setWidget(self->trumpLayer, &(self->curTrump), NULL, true);
 }
 
 void MainFrame::setContent(QWidget *widget)

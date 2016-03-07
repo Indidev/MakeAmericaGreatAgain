@@ -17,7 +17,9 @@ public:
 signals:
 
 protected slots:
-    void startGame();
+    void showOffice();
+    void setTrump(State state = State::sitting);
+    void officeClick(State state);
 
 };
 
