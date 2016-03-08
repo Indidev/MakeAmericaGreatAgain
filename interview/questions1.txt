@@ -1,0 +1,23 @@
+Q: Hillary Clinton is a bit modest right now, why do you think she is not giving so many interviews at the moment?
+true:+5:Blame her: She has a lot to hide. Look, she was the worst secretary of state in the history of the United States.
+false:+1:I don't know her well: I don't know her that well.
+false:-2:Make an assumption: I think she's just busy at the moment.
+false:-2:Polite answer: I think she's a good politician and tries to focus on the more important part of her campaign.
+
+Q: You gave a lot of money to her over the years
+true:+5:Glorify yourself!:I'm a business man, everybody loves me, when I called them, they always treated me well and that's part of the game.
+false:+1:No: No.
+false:-2:Be honest:Yes, it was for a recurring favor that had nothing to do with politics.
+false:-2:Be polite:Excuse me, this was a personal favor and I don't think, that this is related to my or Hillarys politics.
+
+Q: But your republican challengers say: "look, your all over the place politically", you're giving money to Hillary Clinten, Harry Reid, Nancy Pelosi,...
+true:+5:Glorify yourself!: I'm getting along with everybody, 
+false:+1:Don't care: And so?
+false:-2:Be honest: That was for a recurring favor and had nothing to do with my politics.
+false:-2:Admit that: Yes, but these was a personal favor, this won't affect my campaign.
+
+Q: So your giving money not on political believes, you're giving money based on recurring favors like many people do.
+true:+5:Glorify yourself!: People love me, and you know what? I'm very successful, everybody loves me.
+false:+1:Blame Bernie Sanders: I'm self funding my campaign, not like Bernie Sanders.
+false:-2:Be honest: Yes, thats what I did.
+false:-2:Yes: Yes.
