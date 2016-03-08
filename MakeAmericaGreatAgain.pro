@@ -21,7 +21,9 @@ SOURCES +=\
     backend/Input.cpp \
     backend/GameCoordinator.cpp \
     frontend/TitleWidget.cpp \
-    frontend/OfficeWidget.cpp
+    frontend/OfficeWidget.cpp \
+    frontend/InterviewWidget.cpp \
+    backend/MouseTracking.cpp
 
 HEADERS  += frontend/MainFrame.h \
     frontend/LayeredWidget.h \
@@ -29,7 +31,9 @@ HEADERS  += frontend/MainFrame.h \
     backend/Input.h \
     backend/GameCoordinator.h \
     frontend/TitleWidget.h \
-    frontend/OfficeWidget.h
+    frontend/OfficeWidget.h \
+    frontend/InterviewWidget.h \
+    backend/MouseTracking.h
 
 FORMS    += frontend/MainFrame.ui \
     frontend/TitleWidget.ui \
@@ -53,7 +57,8 @@ defineReplace(cp) {
 }
 
 #Directorys to create
-DIRS = img
+DIRS = img\
+        interview
 
 #Loop over all given directories and append
 #the build directory to make absolute paths
@@ -69,6 +74,7 @@ createDirs.commands = $(MKDIR) $$mkcommands
 
 cpFiles.commands += $$cp(resources.txt, ./)
 cpFiles.commands += $$cp(img/*, img/)
+cpFiles.commands += $$cp(interview/*, interview/)
 
 #Add dependencies to first
 first.depends += createDirs

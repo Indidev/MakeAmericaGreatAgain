@@ -5,14 +5,24 @@ ResourceProvider::ResourceProvider(QString resourceList)
 {
     QStringList lines = Input::loadLines(resourceList);
 
+    bool images = true;
+
     for (QString line : lines) {
+        if (line.trimmed().toLower() == "questions")
+            images = false;
+
         int index = line.indexOf(':');
         if (index >= 0) {
             QString key = line.left(index++).trimmed();
-            QString imgPath = line.right(line.size() - index).trimmed();
+            QString path = line.right(line.size() - index).trimmed();
 
-            imageMap[key] = new QImage(imgPath);
+            if (images) {
+                imageMap[key] = new QImage(path);
+            } else { //load question file
+                questions[key] = Input::loadLines(path);
+            }
         }
+
     }
     self = this;
 }
@@ -29,4 +39,20 @@ QImage *ResourceProvider::img(const QString &key)
         return NULL;
 
     return self->imageMap[key];
+}
+
+QList<QString> ResourceProvider::qPack(QString key)
+{
+    if (!self || !self->questions.contains(key))
+        return QList<QString>();
+
+    return self->questions[key];
+}
+
+QList<QString> ResourceProvider::qKeys()
+{
+    if (!self)
+        return QList<QString>();
+
+    return self->questions.keys();
 }

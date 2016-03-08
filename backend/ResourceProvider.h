@@ -16,9 +16,12 @@ public:
     ~ResourceProvider();
     static const ResourceProvider* instance() {return self;}
     static QImage* img(const QString &key);
+    static QList<QString> qPack(QString key);
+    static QList<QString> qKeys();
 
 private:
     QMap<QString, QImage*> imageMap;
+    QMap<QString, QList<QString>> questions;
     static ResourceProvider *self;
 };
 

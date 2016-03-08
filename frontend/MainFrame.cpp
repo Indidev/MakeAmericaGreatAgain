@@ -18,6 +18,7 @@ MainFrame::~MainFrame()
 void MainFrame::init() {
     curContent = NULL;
     curTrump = NULL;
+    curMeter = NULL;
     self = this;
 
     ui->setupUi(this);
@@ -50,10 +51,16 @@ void MainFrame::init() {
     trumpLayer->layout()->setMargin(0);
     trumpLayer->layout()->setSpacing(0);
 
+    meterLayer = layeredWidget->addWidget(3);
+    meterLayer->setLayout(new QGridLayout);
+    meterLayer->layout()->setMargin(0);
+    meterLayer->layout()->setSpacing(0);
+
     //connect(InputGrabber::instance(), SIGNAL(inputPress(InputEvent)), this, SLOT(onKey(InputEvent)));
 
     bgLayer->setAttribute(Qt::WA_TransparentForMouseEvents);
     trumpLayer->setAttribute(Qt::WA_TransparentForMouseEvents);
+    meterLayer->setAttribute(Qt::WA_TransparentForMouseEvents);
     //ui->centralWidget->setMinimumSize(resolution);
     //ui->centralWidget->setMaximumSize(resolution);
 
@@ -66,6 +73,28 @@ void MainFrame::setBg(QImage *img)
         return;
 
     self->bgLabel->setPixmap(QPixmap::fromImage(img->scaled(self->resolution)));
+}
+
+void MainFrame::setElektrometer(QImage *meter)
+{
+    if (!meter || !self)
+        return;
+    QLabel *lbl = new QLabel();
+    lbl->setPixmap(QPixmap::fromImage(meter->scaled(self->resolution)));
+
+    QWidget *w = new QWidget;
+    w->setLayout(new QGridLayout);
+    w->layout()->setSpacing(0);
+    w->layout()->setMargin(0);
+
+    w->layout()->addWidget(lbl);
+
+    self->setWidget(self->meterLayer, &(self->curMeter), w, true);
+}
+
+void MainFrame::removeMeter()
+{
+    self->setWidget(self->meterLayer, &(self->curMeter), NULL, true);
 }
 
 void MainFrame::setTrump(QImage *trump)

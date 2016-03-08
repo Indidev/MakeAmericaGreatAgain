@@ -27,6 +27,8 @@ public:
 
     static void setContent(QWidget *widget);
     static void setBg(QImage* img);
+    static void setElektrometer(QImage* meter);
+    static void removeMeter();
     static void setTrump(QImage* trump);
     static void removeTrump();
 
@@ -37,7 +39,9 @@ protected:
     QWidget *bgLayer;
     QWidget *contentLayer;
     QWidget *trumpLayer;
+    QWidget *meterLayer;
     QWidget *curContent;
+    QWidget *curMeter;
     QWidget *curTrump;
     QLabel *bgLabel;
     QSize resolution;

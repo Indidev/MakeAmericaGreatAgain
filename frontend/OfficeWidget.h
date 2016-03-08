@@ -27,6 +27,8 @@ protected:
 
     void mouseMoveEvent(QMouseEvent * event);
     void mouseReleaseEvent(QMouseEvent *);
+    QRect rect(int x, int y, int w, int h);
+    void checkState(State state);
 
 signals:
     void over(State state);

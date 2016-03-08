@@ -5,3 +5,17 @@ default: img/trump_sitting.png
 twitter: img/trump_twitter.png
 phone: img/trump_phone.png
 exit: img/exit.png
+meter-frame: img/elektometer_frame.png
+meter-bar: img/elektometer_bar.png
+news-left: img/news-frame/left.jpg
+news-right: img/news-frame/right.jpg
+news-up: img/news-frame/up.jpg
+news-low: img/news-frame/low.jpg
+sel-ans: img/news-frame/choosen-answere.png
+def-ans: img/news-frame/default-answere.png
+false-ans: img/news-frame/false-answere.png
+right-ans: img/news-frame/right-answere.png
+
+questions
+
+1: interview/questions1.txt

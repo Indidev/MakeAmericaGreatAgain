@@ -17,44 +17,43 @@ OfficeWidget::~OfficeWidget()
 
 void OfficeWidget::mouseMoveEvent(QMouseEvent *event)
 {
-    QRect resolution = QApplication::desktop()->screenGeometry();
+    QRect twitter = rect(800, 550, 60, 100);
+    QRect press = rect(1340, 90, 440, 850);
+    QRect phone = rect(420, 605, 160, 70);
+    QRect close = rect(1130, 950, 280, 120);
 
-    float facX = (float) resolution.width() / 1920.f;
-    float facY = (float) resolution.height() / 1080.f;
-
-    QRect twitter(800 * facX, 550 * facY, 60 * facX, 100 * facY);
-    QRect press(1340 * facX, 90 * facY, 440 * facX, 850 * facY);
-    QRect phone(420 * facX, 605 * facY, 160 * facX, 70 * facY);
-    QRect close(1130 * facX, 950 * facY, 280 * facX, 120 * facY);
-
-    if (twitter.contains(event->localPos().toPoint())) {
-        if (curState != State::twitter) {
-            curState = State::twitter;
-            emit over(curState);
-        }
-    } else if (press.contains(event->localPos().toPoint())) {
-        if (curState != State::press) {
-            curState = State::press;
-            emit over(curState);
-        }
-    } else if (phone.contains(event->localPos().toPoint())) {
-        if (curState != State::phone) {
-            curState = State::phone;
-            emit over(curState);
-        }
-    } else if (close.contains(event->localPos().toPoint())) {
-      if (curState != State::close) {
-          curState = State::close;
-          emit over(curState);
-      }
-    } else if (curState != State::sitting) {
-        curState = State::sitting;
-        emit over(curState);
-    }
+    if (twitter.contains(event->localPos().toPoint()))
+        checkState(State::twitter);
+    else if (press.contains(event->localPos().toPoint()))
+        checkState(State::press);
+    else if (phone.contains(event->localPos().toPoint()))
+        checkState(State::phone);
+    else if (close.contains(event->localPos().toPoint()))
+      checkState(State::close);
+    else
+        checkState(State::sitting);
 }
 
 void OfficeWidget::mouseReleaseEvent(QMouseEvent*)
 {
     if (curState != sitting)
         emit click(curState);
+}
+
+QRect OfficeWidget::rect(int x, int y, int w, int h)
+{
+    QRect resolution = QApplication::desktop()->screenGeometry();
+
+    float facX = (float) resolution.width() / 1920.f;
+    float facY = (float) resolution.height() / 1080.f;
+
+    return QRect(x * facX, y * facY, w * facX, h * facY);
+}
+
+void OfficeWidget::checkState(State state)
+{
+    if (curState != state) {
+        curState = state;
+        emit over(curState);
+    }
 }
