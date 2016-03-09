@@ -253,9 +253,10 @@ void InterviewWidget::initOptions()
         optionBg->setGeometry(pos);
         optionBg->setPixmap(bgs["def"]);
         QLabel *lbltxt = new QLabel(content);
-        QRect posT = rect(605, 294 + i* 60, 379, 40);
+        QRect posT = rect(605, 294 + i* 60, 380, 40);
         lbltxt->setGeometry(posT);
-        lbltxt->setStyleSheet("color:white;font-size:" + QString::number(s.height() / 2)+ "pt;");
+        lbltxt->setStyleSheet("color:white;font-size:" + QString::number(s.width() / 20)+ "pt;");
+        lbltxt->setAlignment(Qt::AlignVCenter);
 
         optionsBg[i] = optionBg;
         optionsTx[i] = lbltxt;
@@ -284,7 +285,7 @@ void InterviewWidget::initDialog()
     qBox->setWordWrap(true);
 
     answerBox = new QWidget(content);
-    QRect recAns = rect(213, 865, 0, 150);
+    QRect recAns = rect(213, 865, 0, 200);
     answerBox->setGeometry(recAns);
     answerBox->setLayout(new QHBoxLayout);
     answerBox->setStyleSheet("background-color:rgba(0, 0, 0, 130);");
