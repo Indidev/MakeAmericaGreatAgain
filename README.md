@@ -1,5 +1,5 @@
 # MakeAmericaGreatAgain
-MakeAmericaGreatAgain is part of my home exam in "Designing User Interfaces" at Chalmers in Gothenburg.
+MakeAmericaGreatAgain is part of my home exam in "Designing User Experiences" at Chalmers in Gothenburg.
 It is designed to be a critical game about us-americans attitude to elections.
 
 The point is: **Think before you vote!**
