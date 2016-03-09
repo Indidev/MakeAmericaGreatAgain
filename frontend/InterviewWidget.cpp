@@ -189,12 +189,14 @@ void InterviewWidget::mouseMoved(QMouseEvent *event)
             if (!answereRec[curHover].contains(pos)) {
                 optionsBg[curHover]->setPixmap(bgs["def"]);
                 curHover = -1;
+                aBox->setText("");
             }
         }
         for (int i = 0; i < 4 && curHover < 0; i++) {
             if (answereRec[i].contains(pos)) {
                 curHover = i;
                 optionsBg[i]->setPixmap(bgs["sel"]);
+                aBox->setText(curQuestions[0].answeres[i].longT);
             }
         }
     }
@@ -270,13 +272,13 @@ void InterviewWidget::initDialog()
     reporterBox->setLayout(new QHBoxLayout);
     reporterBox->setStyleSheet("background-color:rgba(0, 0, 0, 130);");
     QLabel *reporterLbl = new QLabel("Reporter:");
-    reporterLbl->setStyleSheet("color:#001d9a;background-color:transparent;font-size:" + QString::number(recRep.height() / 6) + "pt");
+    reporterLbl->setStyleSheet("color:#001d9a;background-color:transparent;font-size:" + QString::number(recRep.height() / 7) + "pt");
     reporterBox->layout()->addWidget(reporterLbl);
     reporterLbl->setAlignment(Qt::AlignTop);
     reporterLbl->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Expanding);
 
     qBox = new QLabel;
-    qBox->setStyleSheet("color:white; background-color:transparent; font-size:" + QString::number(recRep.height() / 8) + "pt");
+    qBox->setStyleSheet("color:white; background-color:transparent; font-size:" + QString::number(widthBoxes / 43) + "pt");
     reporterBox->layout()->addWidget(qBox);
     qBox->setAlignment(Qt::AlignTop);
     qBox->setWordWrap(true);
@@ -287,13 +289,13 @@ void InterviewWidget::initDialog()
     answerBox->setLayout(new QHBoxLayout);
     answerBox->setStyleSheet("background-color:rgba(0, 0, 0, 130);");
     QLabel *yourLbl = new QLabel("You:");
-    yourLbl->setStyleSheet("color:#aa0000;background-color:transparent;font-size:" + QString::number(recAns.height() / 6) + "pt");
+    yourLbl->setStyleSheet("color:#aa0000;background-color:transparent;font-size:" + QString::number(recAns.height() / 7) + "pt");
     answerBox->layout()->addWidget(yourLbl);
     yourLbl->setAlignment(Qt::AlignTop);
     yourLbl->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Expanding);
 
     aBox = new QLabel;
-    aBox->setStyleSheet("color:white; background-color:transparent; font-size:" + QString::number(recAns.height() / 8) + "pt");
+    aBox->setStyleSheet("color:grey; background-color:transparent; font-size:" + QString::number(widthBoxes / 43) + "pt");
     answerBox->layout()->addWidget(aBox);
     aBox->setAlignment(Qt::AlignTop);
     aBox->setWordWrap(true);
@@ -348,6 +350,7 @@ void InterviewWidget::loadQuestionPack()
 
 void InterviewWidget::showNextQuestion()
 {
+    aBox->setStyleSheet("color:grey; background-color:transparent; font-size:" + QString::number(widthBoxes / 43) + "pt");
     //reset answer bgs
     for (QLabel* l : optionsBg)
         l->setPixmap(bgs["def"]);
@@ -364,6 +367,7 @@ void InterviewWidget::showNextQuestion()
 
 void InterviewWidget::showAnswere()
 {
+    aBox->setStyleSheet("color:white; background-color:transparent; font-size:" + QString::number(widthBoxes / 43) + "pt");
     //solve
     for (int i = 0; i < 4; i++) {
         optionsBg[i]->setPixmap(bgs[curQuestions[0].answeres[i].isRight?"right":"false"]);
@@ -378,5 +382,5 @@ void InterviewWidget::showAnswere()
     //remove question
     curQuestions.removeFirst();
 
-    rightAnswere = delta > 0;
+    rightAnswere = delta >= 0;
 }
