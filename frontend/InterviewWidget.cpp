@@ -285,12 +285,12 @@ void InterviewWidget::initDialog()
     qBox->setWordWrap(true);
 
     answerBox = new QWidget(content);
-    QRect recAns = rect(213, 865, 0, 200);
+    QRect recAns = rect(213, 865, 0, 230);
     answerBox->setGeometry(recAns);
     answerBox->setLayout(new QHBoxLayout);
     answerBox->setStyleSheet("background-color:rgba(0, 0, 0, 130);");
     QLabel *yourLbl = new QLabel("You:");
-    yourLbl->setStyleSheet("color:#aa0000;background-color:transparent;font-size:" + QString::number(recAns.height() / 7) + "pt");
+    yourLbl->setStyleSheet("color:#aa0000;background-color:transparent;font-size:" + QString::number(recRep.height() / 7) + "pt");
     answerBox->layout()->addWidget(yourLbl);
     yourLbl->setAlignment(Qt::AlignTop);
     yourLbl->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Expanding);
@@ -316,6 +316,9 @@ void InterviewWidget::loadQuestionPack()
             bool error = false;
             Question q;
             q.text = qPack[i++].remove("Q:").trimmed();
+            if ( qPack.size() - i < 4) {
+                error = true;
+            }
             for (int j = 0; j < 4 && !error; i++, j++) {
                 QList<QString> splitted = qPack[i].split(":");
                 if (splitted.size() != 4)

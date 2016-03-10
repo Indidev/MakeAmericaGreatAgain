@@ -1,0 +1,41 @@
+Q: So the journals says, your killing our republican party over immigration, and you say?
+true:+5:Build a wall: We have to bring our country back, were in big trouble, we're losing so much to so many. We have at least 11 million illegals in the country. We have to do something about it, and we have to start building a wall, a big beautiful, powerful wall, it can have a gate, it can have a door, we let people in legally.
+false:+1:Make America great again:We have to make America great again, with a wall on the Mexican border.
+false:-2:Could be:Could be...
+false:-2:Be honest:They might be right, we should rather fight against the criminal illegal immigrants instead blaming all of them and building a wall.
+
+Q: The strongest part of your immigration plan is the wall. But then you say, we gonna have mass-deportations, that's not gonna happen because of 14th amendment, says if your born here, you're an American, and you can't kick Americans out.
+true:+5:Tell him wrong: I think you're wrong about the 14th amendment, and frankly the whole thing with anchor-babies and the concept of anchor babies, I don't think you're right about that.
+false:+1:14th amendment?: I've never heard about the 14th amendment.
+false:-2:Believe him: You might be right with that, we have to figure a way out then.
+false:-2:Compare with Hitler: Hitler also did that, nobody thought he could, but he did.
+
+Q: I can quote it, you want me to quote you the amendment: If you're born here, you're an American, Period.
+true:+5: They have no citizenship: But there are many lawyers saying that's not the way it is, in terms of this. What happens is, they're in Mexico, they gonna have a baby, they come over here for a couple of days, they have the baby. But they say it's not gonna hold up in court. Regardless, when people are illegally in the country, they have to go. They can come back in, but they come back legally.
+false:+1:Illegal is illegal: Still they are illegal in our country, we have to get them out in order to make America great again.
+false:-2:No work for them: We're gonna start a "no work" for illegals campaign, everyone who is hiring one of the illegals, has to fear very high consequences. This way the illegal Mexicans don't get any new work and will go home by themself.
+false:-2:Admit failure: If it is that way, then we have to think about an other solution.
+
+Q: But you are not going to be able to depart people who have American citizenship now. And the federal courts will never allow mass-deportations without do process for each and everyone.
+true:+5:Lawyers as argument: I don't think they have American citizenship and if you speak to some very, very good lawyers, and I know, some would disagree, but many of them agree with me. You gonna find they do not have American citizenship. We have to start a process where we take back our country. Our country is going to hell.
+false:+1:Revoke citizenship: Look, there is a way to achieve that, we just have to revoke their citizenship, after that we can easily deport them.
+false:-2:Argue with Hitler: Hitler also did that...
+false:-2:Admit failure: What you're saying is true, however we still can handle the real illegal Mexicans. Also we should start with the criminal gangs consisting of illegal Mexicans.
+
+Q: Now, there is a way to do it and that is to try to get the constitution amended. Do you know how to do that?
+true:+5:Anchor-Babies: It's a long process and I think it would take to long, I'd much rather find out whether or not anchor-babies are actually citizens, because a lot people don't think they are.
+false:+1:Yes: Yes I know, it's gonna be a long process and I think it would take very long, but I think it is worth it because we're gonna save so much money.
+false:-2:No:No I don't, but my advisors do.
+false:-2:Change the subject: We have about 11 million illegals, most of them are rapists, murders or thieves. I could stand in the middle of the 5th Avenue with a gun and kill one of them and the people would still vote for me.
+
+Q: Now the wallstreet journal says the Hispanic Americans are gonna turn away from the republican party in droves, cause you, even if you don't win, they gonna hate the republican party. What do you say to that?
+true:+5:Don't think so: So in Nevada they just did a poll, I'm leading in every state, virtually every state that they polled, and in Nevada they just had a major pole, where I'm not only leading by big numbers, but I also won the Hispanic vote. And the reason i'm going to win the Hispanic votes is, I'm gonna bring jobs back.
+false:0:Nobody cares: The Hispanics are just a minority in our great country, nevertheless they will still vote for me, I'm gonna bring jobs back from China, Japan and even Mexico, nobody else can do that.
+false:0:They lie: I know the employees of the wallstreet journal, they don't have a clue about politics, the Hispanic Americans do love me.
+false:+2:Glorify yourself: People love me, and you know what? I'm very successful, everybody loves me.
+
+Q: OK, now you, in order to be president, are going to have to win over a sizable amount of the, so called, independent voters. Are you gonna modify it a little bit, or you gonna go out with the scorch and burn tactics we've seen so far?
+true:+5:Compare to Romney: Well, if you look what happened last time with Romney, I mean they say he didn't do well with the Hispanics, but the truth is, he didn't do well with the republicans. They sat home and they didn'tgo out and vote. They had no incentive to vote. But they have a great incentive to come out and vote for me, because we're gonna make America great again, Romney never said that.
+false:+1:Who else...?: Look, who else should they vote for? An old woman? An even older Guy? And, I really don't want to blame him, but Ted isn't relly a worthy opponent.
+false:-2:Adjust your politics: I may adjust it a little.
+false:+2:Glorify yourself: People love me, and you know what? I'm very successful, everybody loves me.

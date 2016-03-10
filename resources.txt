@@ -18,6 +18,7 @@ right-ans: img/news-frame/right-answere.png
 
 questions
 
-clinton: interview/questions1.txt
+clinton: interview/clinton.txt
 muslims: interview/muslimQuestions.txt
 nuclear: interview/nuclearQuestions.txt
+wall: interview/theWall.txt
