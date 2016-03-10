@@ -64,7 +64,7 @@ InterviewWidget::~InterviewWidget()
 
 void InterviewWidget::openTick()
 {
-    ticks += 2;
+    ticks += 3;
     if (ticks >= 100) {
         ticks = 100;
         timer.stop();
@@ -101,7 +101,7 @@ void InterviewWidget::openTick()
 
 void InterviewWidget::closeTick()
 {
-    ticks += 2;
+    ticks += 3;
     if (ticks >= 100) {
         ticks = 100;
         timer.stop();
