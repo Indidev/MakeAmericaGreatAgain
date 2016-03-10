@@ -4,13 +4,13 @@ false:+1:lie:This has nothing to do with religion
 false:-2:Tell the truth:You're right, I should reconsider that.
 false:-2:Show indifference:That might be false, but I don't care.
 
-Q: Would you see, that you need arab muslim nations to help the United State defeat the jihad, would you see that?
-true:+5:No:No I don't, but I do think it would be very very helpfull.
-false:+1:Show nationalism: America is great, we can do this without the muslims.
+Q: Would you see, that you need Arab Muslim nations to help the United State defeat the jihad, would you see that?
+true:+5:No:No I don't, but I do think it would be very very helpful.
+false:+1:Show nationalism: America is great, we can do this without the Muslims.
 false:-2:Yes:Yes, I can clearly see that and we should work more on our ties with these nations.
 false:-2:Blame Obama:That's all Obamas fault.
 
-Q: Saudi Arabia, Marocco, Egypt, their governmant is cooperating against ISIS with us. Turky, their government is letting us land planes there. How is that helpfull to ban people from all of those countrys to defeating the jihad?
+Q: Saudi Arabia, Morocco, Egypt, their government is cooperating against ISIS with us. Turkey, their government is letting us land planes there. How is that helpful to ban people from all of those countries to defeating the jihad?
 true:+5:Noting comes for free:When you say, when you say their governments are letting us- we are paying a very big price to have governments let us do anything.
 false:+1:Blame them: I don't think they are a big use, we could also land our planes in the EU.
 false:-2:See his point: I see your point and I think they might be a bit of a help.
@@ -22,10 +22,10 @@ false:+1:Use EU:We can still use the bases in the EU.
 false:-5:Bomb them:We can use bomb Turkey, get rid of two problems at once sounds good for me.
 false:-2:Cooperate with Turkey:We may do some exceptions for Turkish Muslims.
 
-Q:But I disagree with you, in a sense that if you say no Muslims can travel here from overseas; Your hurting the United States position against ISIS. We need the friendly muslim nation. You can't insult them like that, you can't.
+Q:But I disagree with you, in a sense that if you say no Muslims can travel here from overseas; Your hurting the United States position against ISIS. We need the friendly Muslim nation. You can't insult them like that, you can't.
 true:+5:Disagree:Well, I disagree, people have to be vetted, they have to be perfectly vetted.
-false:+1:Deny that:I truly don't think we are hurting the United States. As for the muslims, they aren't "friendly", most of them are terrorists.
-false:-2:Be sorry:You might be right with that, I should rethink this part of my campain.
+false:+1:Deny that:I truly don't think we are hurting the United States. As for the Muslims, they aren't "friendly", most of them are terrorists.
+false:-2:Be sorry:You might be right with that, I should rethink this part of my campaign.
 false:-2:Be Obama:Yes we can.
 
 Q:We can't insult a whole religion!
@@ -34,8 +34,8 @@ false:+1:No insulting:I don't want to insult them, I just want to keep them out 
 false:-2:Be Obama: Yes we can.
 false:-2:Be popular: Everybody loves me, so I'm not insulting anyone.
 
-Q:I don't think you thought through the unintended consequences of banning an entire religion from comming to the United States. Just my opinion.
-true:+5:Thought through everything: I thought throu everything, belive me, I tought through everything. Look at what's happening, I tought through everything. And again I've had calls from a friend of mine who happen to be muslim, saying your the only one with the curage to say it, they all know what I'm saying is true.
+Q:I don't think you thought through the unintended consequences of banning an entire religion from coming to the United States. Just my opinion.
+true:+5:Thought through everything: I thought through everything, believe me, I thought through everything. Look at what's happening, I thought through everything. And again I've had calls from a friend of mine who happen to be Muslim, saying your the only one with the courage to say it, they all know what I'm saying is true.
 false:-1:Screw you:As you said, this is your opinion.
 false:-2:Admit it:You are right, I did not consider everything.
 false:-2:Say nothing: ...

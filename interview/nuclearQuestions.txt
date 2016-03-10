@@ -1,5 +1,5 @@
 Q: What's your priority among our nuclear triad?
-true:+5:Talk some shit:Well, first of all, I think we need somebody absolutely that we can trust, who is totally responsible. That is so powerful and so important. And one of the things that I'm frankly most proud of is that in 2003, 2004, I was totally against goint into Iraq
+true:+5:Talk some shit:Well, first of all, I think we need somebody absolutely that we can trust, who is totally responsible. That is so powerful and so important. And one of the things that I'm frankly most proud of is that in 2003, 2004, I was totally against going into Iraq
 true:+5:Talk about history:I would have said get out of Syria; get out - if we didn't have the power of weaponry today. The power is so massive that we can't just leave areas that 50 years ago or 75 years ago we wouldn't care. It was hand-to-hand combat.
 false:-5:Admit gap in education:I'm sorry, could you refresh my knowledge of the nuclear triad, that way I can answer to your question in a proper way.
 false:-2:Forward question:You should ask this Hillary Clinton.
