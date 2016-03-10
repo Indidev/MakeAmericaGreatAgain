@@ -22,3 +22,4 @@ clinton: interview/clinton.txt
 muslims: interview/muslimQuestions.txt
 nuclear: interview/nuclearQuestions.txt
 wall: interview/theWall.txt
+kk: interview/kkk.txt

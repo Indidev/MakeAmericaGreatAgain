@@ -1,0 +1,23 @@
+Q: The Anti-Defamation League called on you to publicly condemn unequivocally the racism of former KKK grand wizard David Duke. Will you condemn David Duke and say that you don't want his or other white supremacists votes?
+true:+5:Lie: Well, just so you understand, I don't know anything about David Duke. OK? I don't know anything about what you're even talking about with white supremacy or white supremacists. So, I don't know. I don't know, did he endorse me or what's going on, because, you know, I know nothing about David Duke. I know nothing about white supremacists.
+false:+1:What endorsement?:I don't know what you're talking about, what endorsement?
+false:-2:I will:I will definitely condemn the votes of white supremacists.
+false:-2:condemn votes of KKK: I know David Duke, but that's a time ago now, and as you just said, he's a former grand wizard, he might be a good guy now. However, I don't want the votes of the KKK.
+
+Q: But I guess the question is, even if you don't know about their endorsement, there are these groups and individuals endorsing you. Would you just say unequivocally you condemn them and you don't want their support?
+true:+5:Lie: Well, I have to look at the group. I mean, I don't know what group you're talking about. You wouldn't want me to condemn a group that I know nothing about. I would have to look. If you would send me a list of the groups, I will do research on them. And, certainly, I would disavow if I thought there was something wrong.
+false:-2:Don't get the question: I'm sorry, I don't get the question and I don't know what you're talking about.
+false:-2:KKK?: What is KKK?
+false:-2:Gonna do that: I'll definitely gonna condemn them.
+
+Q: The Ku Klux Klan?
+true:+5:Lie: But you may groups in there that are totally fine, and it would be very unfair. So, give me a list of the groups, and I will let you know.
+false:+1:Yes?:What about that?
+false:-2:Oh!: Oh, well, I should really condemn their votes.
+false:-2:Speechless: ...
+
+Q: OK. I mean, I'm just talking about David Duke and the Ku Klux Klan here, but...
+true:+5:Lie:  I don't know any - honestly, I don't know David Duke. I don't believe I have ever met him. I'm pretty sure I didn't meet him. And I just don't know anything about him.
+false:+1:Don't get it: Look, I don't get what your talking about.
+false:-2:I know: I know, fine for you.
+false:-2:Speechless: ...
