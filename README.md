@@ -73,11 +73,9 @@ Therefore you usually don't have to know facts, you should just attack all other
 Have you ever seen "Who Wants to Be a Millionaire"?
 You get questions from the reporter on the other line. For this purpose you're getting 4 possible answeres and you have to choose the "right" one, ha ha ha... just kidding, you have to lie, deny and change the subject.
 All interviews are from original interviews.
-In most of the questions you can also get to a following question by chosing the "wrong" answere however this answere was then considered as possible and also leads to the following question.
-If you're answering a question in a way which makes the following question unpossible, then the moderator changes the subject.
 
-Every answere you make increases or decreases your electometer and therefor your goal to be president.
-Act like one of the candidates of the current campaign to get the points.
+Every answere you increases or decreases your electometer and therefor your goal to be president.
+Act like "one" of the candidates of the current campaign to get the points.
 
 ### Tweeting stuff (not planned)
 Exactly what it says, tweet stuff like:
