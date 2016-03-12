@@ -79,7 +79,6 @@ protected:
     QList<Question> curQuestions;
     QList<QString> unfinishedPacks;
     QList<QString> finishedPacks;
-    bool rightAnswere;
 
     QRect rect(int x, int y, int w, int h);
     void initOptions();

@@ -219,10 +219,7 @@ void InterviewWidget::mouseReleased(QMouseEvent* event)
         selected = curHover;
         emit stateChanged(showA);
     } else if (curState == showA) {
-        if (rightAnswere)
-            emit stateChanged(nextQ);
-        else
-            emit stateChanged(newPool);
+        emit stateChanged(nextQ);
     }
 }
 
@@ -374,17 +371,17 @@ void InterviewWidget::showAnswere()
     aBox->setStyleSheet("color:white; background-color:transparent; font-size:" + QString::number(widthBoxes / 43) + "pt");
     //solve
     for (int i = 0; i < 4; i++) {
-        optionsBg[i]->setPixmap(bgs[curQuestions[0].answeres[i].isRight?"right":"false"]);
+        if (curQuestions[0].answeres[i].isRight) {
+            optionsBg[i]->setPixmap(bgs["right"]);
+            //show true answere
+            aBox->setText(curQuestions[0].answeres[i].longT);
+        } else {
+            optionsBg[i]->setPixmap(bgs["false"]);
+        }
     }
 
-    //show selected answere
-    aBox->setText(curQuestions[0].answeres[selected].longT);
+    emit pointsChanged(curQuestions[0].answeres[selected].points);
 
-    int delta = curQuestions[0].answeres[selected].points;
-
-    emit pointsChanged(delta);
     //remove question
     curQuestions.removeFirst();
-
-    rightAnswere = delta >= 0;
 }
