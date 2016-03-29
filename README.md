@@ -1,11 +1,11 @@
 # MakeAmericaGreatAgain
 MakeAmericaGreatAgain is part of my home exam in "Designing User Experiences" at Chalmers in Gothenburg.
-It is designed to be a critical game about us-americans attitude to elections.
+It is designed to be a critical game about us-americans voting behavior.
 
-The point is: **Think before you vote!**
+Message: **Think before you vote!**
 
 My home exam is not about implementing the game, however I decided to implement one of the three minigames included in the game.
-There's also a small chance, that i'm gonna implement more.
+There's also a small chance, that i'm gonna implement more. (no there isn't...)
 
 ![HeadCooker](img/office.jpg)
 
